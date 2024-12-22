@@ -1,0 +1,18 @@
+{
+    "name": "hexlet/code",
+    "description": "brain-games",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pavel-pj"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
