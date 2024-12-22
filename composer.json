@@ -13,6 +13,9 @@
             "name": "pavel-pj"
         }
     ],
+    "bin": [
+        "bin/brain-games"
+    ],
     "minimum-stability": "stable",
     "require": {}
 }
