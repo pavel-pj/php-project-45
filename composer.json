@@ -1,0 +1,27 @@
+{
+    "name": "hexlet/codes2",
+    "description": "test-project",
+    "type": "project",
+    "license": "Mit",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Codes2\\": "src/"
+        },
+        "files": [
+            "src/Cli.php"
+            ]
+    },
+    "bin": [
+        "bin/brain-games"
+    ],
+    "authors": [
+        {
+            "name": "Pavel Smith",
+            "email": "admin@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.1"
+    }
+}
