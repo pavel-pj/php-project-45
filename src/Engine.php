@@ -52,10 +52,12 @@ function gameDescription(string $game){
         case 'calc' :
         {
             line('What is the result of the expression?');
-
+        }
+        case 'bcd' :
+        {
+            line('Find the greatest common divisor of given numbers.');
         }
     }
-
 }
 
 
@@ -67,10 +69,11 @@ function question($game) {
         }
         case 'calc' :
         {
-           // line('What is the result of the expression?');
-           return games\calc_question();
-
-
+            return games\calc_question();
+        }
+        case 'bcd' :
+        {
+            return games\bcd_question();
         }
     }
 
