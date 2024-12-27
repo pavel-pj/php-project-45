@@ -16,3 +16,6 @@ brain-calc:
 	./bin/brain-calc
 brain-bcd:
 	./bin/brain-bcd
+brain-progression:
+	./bin/brain-progression
+	

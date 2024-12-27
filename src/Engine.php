@@ -57,6 +57,11 @@ function gameDescription(string $game){
         {
             line('Find the greatest common divisor of given numbers.');
         }
+        case 'progression' :
+            {
+                line('What number is missing in the progression?');
+            }
+
     }
 }
 
@@ -74,6 +79,10 @@ function question($game) {
         case 'bcd' :
         {
             return games\bcd_question();
+        }
+        case 'progression' :
+        {
+            return games\progression_question();
         }
     }
 

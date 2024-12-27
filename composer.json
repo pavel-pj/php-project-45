@@ -11,13 +11,15 @@
             "src/Engine.php",
             "src/Games/Calc.php",
             "src/Games/Even.php",
-            "src/Games/Bcd.php"
+            "src/Games/Bcd.php",
+            "src/Games/Progression.php"
         ]
     },
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-bcd"
+        "bin/brain-bcd",
+        "bin/brain-progression"
     ],
     "authors": [
         {
