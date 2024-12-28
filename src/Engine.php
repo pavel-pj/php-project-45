@@ -25,7 +25,7 @@ function engine(string $game)
             exit;
         }
     }
-    line("Congratulations, $name");
+    line("Congratulations, $name!");
 }
 
 function welcome(string $game): string
