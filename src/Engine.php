@@ -44,7 +44,8 @@ function gameDescription(mixed $game): void
         'calc' =>  line('What is the result of the expression?'),
         'gcd' => line('Find the greatest common divisor of given numbers.'),
         'progression' => line('What number is missing in the progression?'),
-        'prime' => line('Answer "yes" if given number is prime. Otherwise answer "no".')
+        'prime' => line('Answer "yes" if given number is prime. Otherwise answer "no".'),
+        default => line('Answer "yes" if given number is prime. Otherwise answer! "no".')
     };
 }
 
@@ -56,7 +57,8 @@ function question(mixed $game): array
          'calc' => Games\calc_question(),
          'gcd' => Games\gcd_question(),
          'progression' => Games\progression_question(),
-         'prime' => Games\prime_question()
+         'prime' => Games\prime_question(),
+         default => Games\prime_question(),
      };
 
     return $question;

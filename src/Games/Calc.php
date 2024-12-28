@@ -12,8 +12,7 @@ function calc_question(): array
     $type = rand(1, 3);
     $sign = '';
     $result = 0;
-
-    $type = 2;
+ 
 
     switch ($type) {
         case 1:
