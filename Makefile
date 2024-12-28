@@ -13,7 +13,7 @@ lint:
 brain-even:
 	./bin/brain-even
 brain-calc:
-	./bin/brain-calc
+	./bin/cbrain-calc
 brain-bcd:
 	./bin/brain-bcd
 brain-progression:
