@@ -37,7 +37,7 @@ function welcome(string $game): string
     return $name;
 }
 
-function gameDescription(string $game): void
+function gameDescription(mixed $game): void
 {
     match ($game) {
         'even'=>  line('Answer "yes" if the number is even, otherwise answer "no".'),
@@ -49,14 +49,14 @@ function gameDescription(string $game): void
 }
 
 
-function question($game): array
+function question(mixed $game): array
 {
      $question = match ($game) {
-         'even' =>  games\even_question(),
-         'calc' => games\calc_question(),
-         'gcd' => games\gcd_question(),
-         'progression' => games\progression_question(),
-         'prime' => games\prime_question()
+         'even' =>  Games\even_question(),
+         'calc' => Games\calc_question(),
+         'gcd' => Games\gcd_question(),
+         'progression' => Games\progression_question(),
+         'prime' => Games\prime_question()
      };
 
     return $question;
