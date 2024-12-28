@@ -21,7 +21,8 @@
         "bin/brain-even",
         "bin/brain-bcd",
         "bin/brain-progression",
-        "bin/brain-prime"
+        "bin/brain-prime",
+        "bin/brain-calc"
     ],
     "authors": [
         {
