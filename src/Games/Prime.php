@@ -11,7 +11,7 @@ function prime_question(): array
     $primes = createPrimeArray();
     $result = 'no';
 
-    if (in_array($num, $primes, false)) {
+    if (in_array($num, $primes, true)) {
         $result = 'yes';
     }
 

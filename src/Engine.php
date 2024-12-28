@@ -39,7 +39,7 @@ function welcome(string $game): string
 
 function gameDescription(mixed $game): void
 {
-    match ($game) {
+    match ((string)$game) {
         'even'=>  line('Answer "yes" if the number is even, otherwise answer "no".'),
         'calc' =>  line('What is the result of the expression?'),
         'gcd' => line('Find the greatest common divisor of given numbers.'),
@@ -51,7 +51,7 @@ function gameDescription(mixed $game): void
 
 function question(mixed $game): array
 {
-     $question = match ($game) {
+     $question = match ((string)$game) {
          'even' =>  Games\even_question(),
          'calc' => Games\calc_question(),
          'gcd' => Games\gcd_question(),
