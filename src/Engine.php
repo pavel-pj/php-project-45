@@ -5,8 +5,7 @@ namespace Hexlet\Codes2;
 use function cli\line;
 use function cli\prompt;
 
-
-function engine(string $game )
+function engine(string $game)
 {
     $levels = 3;
 
@@ -14,23 +13,19 @@ function engine(string $game )
     gameDescription($game);
 
     for ($i = 0; $i < $levels; $i++) {
+        ['question' => $question, 'result' => $result ] = question($game);
 
-       ['question' =>$question, 'result'=>$result ] = question($game);
+        $answer = prompt($question);
+        line("Your answer %s!", $answer);
 
-       $answer = prompt($question);
-       line("Your answer %s!", $answer );
-
-       if ( isCorrectAnswer( $result,$answer)) {
-           line("Correct!");
-       } else {
-           line("Let's try again, $name!");
-           exit;
-       }
-
+        if (isCorrectAnswer($result, $answer)) {
+            line("Correct!");
+        } else {
+            line("Let's try again, $name!");
+            exit;
+        }
     }
     line("Congratulations, $name");
-
-
 }
 
 function welcome(string $game): string
@@ -42,58 +37,29 @@ function welcome(string $game): string
     return $name;
 }
 
-function gameDescription(string $game){
-
-    switch ($game) {
-        case 'even' :
-        {
-            line('Answer "yes" if the number is even, otherwise answer "no".');
-        }
-        case 'calc' :
-        {
-            line('What is the result of the expression?');
-        }
-        case 'bcd' :
-        {
-            line('Find the greatest common divisor of given numbers.');
-        }
-        case 'progression' :
-            {
-                line('What number is missing in the progression?');
-            }
-        case 'prime' :
-        {
-            line('Answer "yes" if given number is prime. Otherwise answer "no".');
-        }
-
-    }
+function gameDescription(string $game): void
+{
+    match ($game) {
+        'even'=>  line('Answer "yes" if the number is even, otherwise answer "no".'),
+        'calc' =>  line('What is the result of the expression?'),
+        'bcd' => line('Find the greatest common divisor of given numbers.'),
+        'progression' => line('What number is missing in the progression?'),
+        'prime' => line('Answer "yes" if given number is prime. Otherwise answer "no".')
+    };
 }
 
 
-function question($game) {
-    switch ($game) {
-        case 'even' :
-        {
-            return games\even_question();
-        }
-        case 'calc' :
-        {
-            return games\calc_question();
-        }
-        case 'bcd' :
-        {
-            return games\bcd_question();
-        }
-        case 'progression' :
-        {
-            return games\progression_question();
-        }
-        case 'prime' :
-        {
-            return games\prime_question();
-        }
-    }
+function question($game): array
+{
+     $question = match ($game) {
+         'even' =>  games\even_question(),
+         'calc' => games\calc_question(),
+         'bcd' => games\bcd_question(),
+         'progression' => games\progression_question(),
+         'prime' => games\prime_question()
+     };
 
+    return $question;
 }
 
 function isCorrectAnswer(mixed $result, mixed $answer): bool

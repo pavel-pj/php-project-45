@@ -5,13 +5,13 @@ namespace Hexlet\Codes2\Games;
 use function cli\line;
 use function cli\prompt;
 
-function prime_question( ): array
+function prime_question(): array
 {
     $num =  rand(1, 199);
-    $primes = createPrimeArray () ;
+    $primes = createPrimeArray();
     $result = 'no';
 
-    if ( in_array ($num, $primes) ) {
+    if (in_array($num, $primes)) {
         $result = 'yes';
     }
 
@@ -19,9 +19,8 @@ function prime_question( ): array
         'question' => "Question: $num ",
         'result' => $result
     ];
-
 }
- 
+
 function createPrimeArray(): array
 {
     $primeArray = [
