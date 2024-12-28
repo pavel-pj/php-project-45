@@ -61,6 +61,10 @@ function gameDescription(string $game){
             {
                 line('What number is missing in the progression?');
             }
+        case 'prime' :
+        {
+            line('Answer "yes" if given number is prime. Otherwise answer "no".');
+        }
 
     }
 }
@@ -83,6 +87,10 @@ function question($game) {
         case 'progression' :
         {
             return games\progression_question();
+        }
+        case 'prime' :
+        {
+            return games\prime_question();
         }
     }
 

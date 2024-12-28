@@ -10,5 +10,3 @@ if (file_exists($autoloadPath1)) {
 }
  
 Hexlet\Codes2\welcome();
-
-//echo "Welcome to the Brain Games!\n";

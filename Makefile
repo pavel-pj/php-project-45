@@ -18,4 +18,6 @@ brain-bcd:
 	./bin/brain-bcd
 brain-progression:
 	./bin/brain-progression
+brain-prime:
+	./bin/brain-prime
 	

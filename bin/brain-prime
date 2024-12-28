@@ -9,4 +9,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-Hexlet\Codes22\engine('progression');
+Hexlet\Codes2\engine('prime');
