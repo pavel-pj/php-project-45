@@ -13,7 +13,6 @@ function calc_question(): array
     $sign = '';
     $result = 0;
  
-
     switch ($type) {
         case 1:
             $sign = '+';
