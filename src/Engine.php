@@ -42,7 +42,7 @@ function gameDescription(string $game): void
     match ($game) {
         'even'=>  line('Answer "yes" if the number is even, otherwise answer "no".'),
         'calc' =>  line('What is the result of the expression?'),
-        'bcd' => line('Find the greatest common divisor of given numbers.'),
+        'gcd' => line('Find the greatest common divisor of given numbers.'),
         'progression' => line('What number is missing in the progression?'),
         'prime' => line('Answer "yes" if given number is prime. Otherwise answer "no".')
     };
@@ -54,7 +54,7 @@ function question($game): array
      $question = match ($game) {
          'even' =>  games\even_question(),
          'calc' => games\calc_question(),
-         'bcd' => games\bcd_question(),
+         'gcd' => games\gcd_question(),
          'progression' => games\progression_question(),
          'prime' => games\prime_question()
      };

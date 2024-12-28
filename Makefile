@@ -14,8 +14,8 @@ brain-even:
 	./bin/brain-even
 brain-calc:
 	./bin/brain-calc
-brain-bcd:
-	./bin/brain-bcd
+brain-gcd:
+	./bin/brain-gcd
 brain-progression:
 	./bin/brain-progression
 brain-prime:

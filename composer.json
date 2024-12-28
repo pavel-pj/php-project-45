@@ -11,7 +11,7 @@
             "src/Engine.php",
             "src/Games/Calc.php",
             "src/Games/Even.php",
-            "src/Games/Bcd.php",
+            "src/Games/Gcd.php",
             "src/Games/Progression.php",
             "src/Games/Prime.php"
         ]
@@ -19,7 +19,7 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-bcd",
+        "bin/brain-gcd",
         "bin/brain-progression",
         "bin/brain-prime",
         "bin/brain-calc"

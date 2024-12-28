@@ -5,12 +5,12 @@ namespace Hexlet\Codes2\Games;
 use function cli\line;
 use function cli\prompt;
 
-function bcd_question(): array
+function gcd_question(): array
 {
     $num1 = createEvenNumber();
     $num2 = createEvenNumber();
 
-    $result = getBcd($num1, $num2);
+    $result = getGcd($num1, $num2);
 
     return [
         'question' => "Question: $num1 $num2 ",
@@ -18,7 +18,7 @@ function bcd_question(): array
     ];
 }
 
-function getBcd(int $num1, int $num2): int
+function getGcd(int $num1, int $num2): int
 {
     $maxNum = max($num1, $num2);
     $i = 1;
